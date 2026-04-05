@@ -1,0 +1,171 @@
+header {
+    background-color: #9846A0;
+    width: 20rem;
+    height: 4.9375rem;
+    display: flex;
+    position: relative;
+}
+.menu-logo svg {
+    width: 2.375rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.logo svg {
+    width: 7.5rem;
+    margin-left: 2.5625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.shop svg {
+    width: 1.5rem;
+    margin-left: 3.25rem;
+    margin-top: 1.75rem;
+}
+main {
+    background: linear-gradient(90deg, #46A098 0%, #54A654 100%);
+    width: 20rem;
+    height: 35.5rem;
+    font-family: "PT sans", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+}
+main h2 {
+    padding-left: 1rem;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.4375rem;
+}
+main h2 .brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+main p {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+main a {
+    display: inline-block;
+    background-color: #9846A0;
+    margin-left: 1rem;
+    margin-top: 2.5625rem;
+}
+.CTA {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-decoration: none;
+    font-family: "PT sans" sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#drop-menu-toggle {
+    display: none;
+}
+.drop-menu {
+    position: absolute;
+    top: 4.9375rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-0.625rem);
+    pointer-events: none;
+    transition: 0.3s ease;
+    background-color: #9846A0;
+    height: 23.875rem;
+    font-family: "PT sans" sans-serif;
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+.drop-menu ul {
+    width: 18rem;
+    background: #9846A0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 0.0625rem solid #CECBCB;
+    border-bottom: 0.0625rem solid #CECBCB;
+}
+.drop-menu li {
+    border-bottom: 0.0625rem solid #CECBCB;
+}
+.drop-menu li:last-child {
+    border-bottom: none;
+}
+.drop-menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#drop-menu-toggle:checked ~ .drop-menu {
+    opacity: 1;
+}
+
+@media (min-width: 48.75rem) {
+    header {
+        width: 100%;
+        height: 8rem;
+        flex-wrap: wrap;
+    }
+    .menu-logo {
+        display: none;
+    }
+    .drop-menu {
+    position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    height: auto;
+    width: 100%;
+}
+.drop-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+.drop-menu li {
+    border: none;
+}
+.drop-menu a {
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+.drop-menu a:hover {
+    background-color: #A258A9;
+    border-radius: 0.3125rem;
+}
+main {
+    width: 48.75rem;
+    height: 35.5rem;
+    margin: 0 auto;
+}
+.CTA:hover {
+    background-color: #793880;
+}
+}
+
+@media (min-width: 64.8125rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 5.5rem;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .shop {
+        padding-bottom: 1.875rem;
+    }
+    main {
+        width: 100%;
+    }
+    main h2, p {
+        width: 30.5rem;
+    }
+}
